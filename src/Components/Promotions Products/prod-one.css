@@ -16,7 +16,7 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background: url("/public/images/banner/b17.jpg");
+  background: url("/images/banner/b17.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -29,7 +29,7 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background: url("/public/images/banner/b10.jpg");
+  background: url("/images/banner/b10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

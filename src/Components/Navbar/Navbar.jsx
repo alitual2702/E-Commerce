@@ -7,7 +7,7 @@ import { CiMenuFries } from "react-icons/ci";
 const Navbar = () => {
   const [menu, setmenu] = useState(false);
   let toggleMenu = useRef(null);
-  
+
   const handleClick = () => {
     if (!menu) {
       toggleMenu.current.classList.toggle("menu-none");
@@ -17,11 +17,11 @@ const Navbar = () => {
       setmenu(false);
     }
   };
-  
+
   useEffect(() => {
     toggleMenu.current.classList.add("menu-none");
   }, []);
-  
+
   return (
     <header className="navbar">
       <div className="logo">

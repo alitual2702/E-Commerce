@@ -12,6 +12,8 @@ import Repair from "./Components/Repairing/Repair";
 
 function App() {
   return (
+   
+  
     <div className="parent">
       <Navbar />
 
@@ -34,6 +36,8 @@ function App() {
 
       <Footer />
     </div>
+  
+   
   );
 }
 

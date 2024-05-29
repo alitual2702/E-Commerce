@@ -1,11 +1,17 @@
 import React from 'react'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 
 
-const ProductsEach = ({cardImg , cardTitle , cardName ,cartPrice}) => {
+
+const ProductsEach = ({cardImg , cardTitle , cardName ,cartPrice , keyIndex}) => {
+  
+ 
+  const navigate = useNavigate()
   return (
-    <div className="feature-products">
+   
+    <div className="feature-products" key={keyIndex} onClick={() => navigate("/product")}>
 
         <img src={cardImg} alt="" className="product-img" />
 
@@ -24,7 +30,7 @@ const ProductsEach = ({cardImg , cardTitle , cardName ,cartPrice}) => {
 
           </div>
           <h3 className="products-price">{cartPrice}</h3>
-          <FaShoppingCart className="product-shop-cart"/>
+          <FaShoppingCart className="product-shop-cart" />
 
 
         </div>

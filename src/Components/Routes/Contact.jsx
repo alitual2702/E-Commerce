@@ -11,7 +11,10 @@ const Contact = () => {
       >
         Contact
       </h1>
-      <div class="container">
+      <div         style={{
+        width:"95%",
+        margin : "0 auto",
+        }}>
         <h1>Contact Us: Best Practices for E-commerce</h1>
 
         <h2>Importance of Effective Contact Us Pages</h2>

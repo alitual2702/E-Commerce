@@ -1,6 +1,12 @@
 import React from "react";
 import "./footer.css";
-import { FaFacebookF,FaTwitter,FaInstagram,FaPinterestP,FaYoutube   } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaPinterestP,
+  FaYoutube,
+} from "react-icons/fa";
 
 import FooterLinks from "./FooterLinks";
 const Footer = () => {
@@ -30,10 +36,10 @@ const Footer = () => {
         </p>
         <div className="footer-social-icons">
           <a href="#" className="numberwise-icons">
-          <FaFacebookF />
+            <FaFacebookF />
           </a>
           <a href="#" className="numberwise-icons">
-        <FaTwitter />
+            <FaTwitter />
           </a>
           <a href="#" className="numberwise-icons">
             <FaInstagram />
@@ -42,7 +48,7 @@ const Footer = () => {
             <FaPinterestP />
           </a>
           <a href="#" className="numberwise-icons">
-        <FaYoutube />
+            <FaYoutube />
           </a>
         </div>
       </div>
@@ -81,7 +87,7 @@ const Footer = () => {
         />
       </div>
       <div className="copyright">
-        <span className="c">©</span> 2021.Teck2 etc - (C  a  r  a) Medi Mart
+        <span className="c">©</span> 2021.Teck2 etc - (C a r a) Medi Mart
       </div>
     </footer>
   );

@@ -9,22 +9,17 @@ const Arrival = () => {
       <p className="feature-paragraph">Summer Collection New Modern Design</p>
 
       <div className="product-main-container">
-      {
-        arrivalObj.map((arrItem , arrkey) => {
-          return(
-
+        {arrivalObj.map((arrItem, arrkey) => {
+          return (
             <ProductsEach
-            keyIndex={arrkey}
-                cardImg={arrItem.cardImg}
-                cardTitle={arrItem.cardTitle}
-                cardName={arrItem.cardName}
-                cartPrice={arrItem.cartPrice}
-              />
-             
-          )
-        })
-      }
-       
+              keyIndex={arrkey}
+              cardImg={arrItem.cardImg}
+              cardTitle={arrItem.cardTitle}
+              cardName={arrItem.cardName}
+              cartPrice={arrItem.cartPrice}
+            />
+          );
+        })}
       </div>
     </section>
   );

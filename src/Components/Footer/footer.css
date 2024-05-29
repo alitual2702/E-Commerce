@@ -119,16 +119,17 @@ strong {
   }
 }
 @media screen and (max-width: 480px) {
-    .footer-flex-left , .footer-flex-right{
-        grid-column: 1/3;
-    }
-  .footer-flex-left  .img-logo{
-        height: 50px;
-        width: 180px;
-    }
-    
-    .copyright {
-        font-size: 0.8rem;
-      grid-column: 1/3;
-    }
+  .footer-flex-left,
+  .footer-flex-right {
+    grid-column: 1/3;
   }
+  .footer-flex-left .img-logo {
+    height: 50px;
+    width: 180px;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    grid-column: 1/3;
+  }
+}

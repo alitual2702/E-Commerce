@@ -1,0 +1,128 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #e4e6f4;
+  z-index: 10000;
+  padding: 0rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 20px #d3d3d3;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.img-logo {
+  width: 100%;
+  height: 70%;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+.list {
+  list-style: none;
+  position: relative;
+  letter-spacing: 1px;
+}
+.links {
+  font-size: 16px;
+  color: #718093;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.links:hover {
+  color: #127c76;
+}
+.links::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: -4px;
+  background-color: #127c76;
+  transition: all 0.3s ease;
+}
+.links:hover::before {
+  width: 50%;
+}
+.active {
+  color: #127c76;
+  position: relative;
+}
+.active::before {
+  content: "";
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  bottom: -4px;
+  background-color: #127c76;
+}
+.bag-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #718093;
+}
+.bag-link:hover {
+  color: #127c76;
+}
+.cartnav {
+  font-size: 1.3rem;
+}
+.menu-bar {
+  align-items: center;
+  font-size: 1.3rem;
+
+  font-weight: 900;
+  display: none;
+  height: 100%;
+}
+.menu {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .img-logo{
+    height: 50%;
+  }
+  .navbar{
+    padding: 0 0.5rem;
+  }
+  .menu-bar {
+    position: relative;
+    
+    display: flex;
+  }
+  .nav-links {
+    padding: 1.5rem 1rem;
+    width: 250px;
+    height: 250px;
+    gap: 1rem;
+    z-index: 10000;
+    align-items: flex-start;
+    flex-direction: column;
+    right: 0;
+    top: 60px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  .links,
+  .menu-bar {
+    color: #127c76;
+    font-size: 1rem;
+  }
+  .menu-none {
+    opacity: 0;
+    top: 100px;
+  }
+}

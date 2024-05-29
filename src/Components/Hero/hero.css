@@ -1,0 +1,160 @@
+.title {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  height: 700px;
+}
+.heroimg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  position: absolute;
+}
+.title-box {
+
+  display: flex;
+  gap: 0.2rem;
+  margin-left: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.title-first-line {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #676767;
+}
+.title-sec-line {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.title-sec-line-sec {
+  margin-top: -15px;
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #127c76;
+}
+.title-paragraph {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: #a1a1a1;
+  margin-bottom: 2rem;
+}
+.title-shop {
+  border: none;
+  background: url(images/button.png);
+  font-weight: bold;
+  height: 60px;
+  width: 250px;
+  font-size: 1.3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  color: #127c76;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    height: 550px;
+  }
+  .title-first-line {
+    font-size: 1.1rem;
+  }
+  .title-sec-line {
+    font-size: 2.2rem;
+  }
+  .title-sec-line-sec {
+    font-size: 3.2rem;
+  }
+  .title-paragraph {
+    font-size: 0.9rem;
+  }
+  .title-shop {
+    font-size: 1rem;
+    width: 200px;
+    height: 40px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .title {
+      height: 400px;
+    }
+    .title-box{
+        margin-left: 0.5rem;
+    }
+    .title-first-line {
+      font-size: 1rem;
+    }
+    .title-sec-line {
+      font-size: 2rem;
+    }
+    .title-sec-line-sec {
+      font-size: 2.5rem;
+    }
+    .title-paragraph {
+      font-size: 0.7rem;
+    }
+    .title-shop {
+      font-size: 0.8rem;
+      width: 150px;
+      height: 30px;
+    }
+  }
+  
+@media screen and (max-width: 550px) {
+    .title {
+      height: 300px;
+    }
+    .title-first-line {
+        font-size: 0.8rem;
+      }
+      .title-sec-line {
+        font-size: 1.3rem;
+      }
+      .title-sec-line-sec {
+        font-size: 1.8rem;
+      }
+      .title-paragraph {
+        font-size: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      .title-shop {
+        font-size: 0.7rem;
+        width: 150px;
+        height: 30px;
+      }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .title {
+      height: 230px;
+    }
+    .title-first-line {
+        font-size: 0.6rem;
+      }
+      .title-sec-line {
+        font-size: 1rem;
+      }
+      .title-sec-line-sec {
+        font-size: 1.5rem;
+      }
+      .title-paragraph {
+        font-size: 0.4rem;
+      }
+      .title-shop {
+        font-size: 0.6rem;
+        width: 100px;
+        height: 25px;
+      }
+  }

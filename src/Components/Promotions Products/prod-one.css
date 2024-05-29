@@ -1,0 +1,122 @@
+.collection {
+  width: 100%;
+  margin: 60px 0px;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 1rem;
+  color: white;
+  gap: 1.1rem;
+}
+.left {
+  width: 100%;
+  height: 400px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background: url(images/banner/b17.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.right {
+  width: 100%;
+  padding: 1rem;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background: url(images/banner/b10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.collection-span {
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+.collection-offer {
+  font-size: 2.4rem;
+}
+.collection-paragraph {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.collection-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border: 1px solid white;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 25px 0px;
+}
+.collection-link:hover {
+  background-color: #087971;
+  border: 1px solid #087971;
+  color: #fff;
+}
+@media screen and (max-width: 950px) {
+  .left,
+  .right {
+    height: 300px;
+  }
+  .collection-offer {
+    font-size: 2.1rem;
+  }
+  .collection-paragraph {
+    font-size: 0.85rem;
+  }
+  .collection-span {
+    font-size: 1rem;
+  }
+  .collection-link {
+    width: 120px;
+    height: 35px;
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  .collection {
+    grid-template-columns: 1fr;
+  }
+  .left,
+  .right {
+    height: 250px;
+  }
+
+  .collection-link {
+    width: 120px;
+    height: 35px;
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .left,
+  .right {
+    height: 220px;
+  }
+  .collection-offer {
+    font-size: 1.6rem;
+  }
+  .collection-paragraph {
+    font-size: 0.7rem;
+  }
+  .collection-span {
+    font-size: 0.8rem;
+  }
+  .collection-link {
+    width: 100px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+}

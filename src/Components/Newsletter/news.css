@@ -1,5 +1,5 @@
 .form-section {
-  background: url(images/about/banner.png);
+  background: url("images/about/banner.png");
   width: 100%;
   color: #fff;
   margin: 3rem 0;

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./nav.css";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
@@ -61,7 +61,6 @@ const Navbar = () => {
       <a className="menu-bar" onClick={handleClick}>
         <CiMenuFries className="menu" />
       </a>
-      <Outlet />
     </header>
   );
 };

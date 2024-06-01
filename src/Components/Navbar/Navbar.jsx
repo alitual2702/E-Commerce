@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./nav.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="logo">
-        <img className="img-logo" src="images/logo.png" alt="" />
+        <img className="img-logo" src="/images/logo.png" alt="" />
       </div>
 
       <div ref={toggleMenu} className="nav-links">
@@ -61,6 +61,7 @@ const Navbar = () => {
       <a className="menu-bar" onClick={handleClick}>
         <CiMenuFries className="menu" />
       </a>
+      <Outlet />
     </header>
   );
 };
